@@ -22,7 +22,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import { NativeBaseProvider, Button } from 'native-base';
-import ScrollScreen from './src/Screens/ScrollScreen.tsx';
+import ScrollScreen from './src/Screens/ScrollScreen';
 
 type SectionProps = PropsWithChildren<{
   title: string;

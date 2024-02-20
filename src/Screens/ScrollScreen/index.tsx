@@ -62,6 +62,7 @@ const ScrollScreen: React.FC = () => {
       activeDot={<View style={styles.activeDot} />}
       paginationStyle={styles.pagination}
       ref={swiperRef}
+      loop={false}
     >
       <View style={[styles.slide, styles.background1]}>
         <Text style={styles.text}>Slide 1</Text>

@@ -10,7 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "native-base": "^3.4.28",
+    "@rneui/base": "^4.0.0-rc.8",
+    "@rneui/themed": "^4.0.0-rc.8",
     "react": "18.2.0",
     "react-native": "0.73.4",
     "react-native-safe-area-context": "3.3.2",
