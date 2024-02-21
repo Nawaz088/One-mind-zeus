@@ -1,27 +1,35 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { ImageBackground, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Swiper from 'react-native-swiper';
 import { useRef } from 'react';
+import { Button } from '@rneui/themed';
 
+// # image imports
+import Imagebg1 from '../../theme/images/AdobeStock1.png';
+
+// color imports
+import {Colors} from '../../theme/colors/globalColors';
+
+const BgColor = Colors.sliderColours.primary;
 const styles = StyleSheet.create({
   wrapper: {
     height: '100%',
+
   },
   slide: {
     flex: 1,
+    width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: `rgba(${BgColor}, 0.9)`,
   },
   text: {
     color: '#fff',
     fontSize: 30,
     fontWeight: 'bold',
-  },
-  background1: {
-    backgroundColor: '#3498db',
-  },
-  background2: {
-    backgroundColor: '#2ecc71',
   },
   background3: {
     backgroundColor: '#e74c3c',
@@ -48,11 +56,11 @@ const styles = StyleSheet.create({
 const ScrollScreen: React.FC = () => {
   const swiperRef = useRef(null);
 
-    const swipeToEnd = () => {
-      if (swiperRef.current) {
-        swiperRef.current.scrollBy(2);
-      }
+  const swipeToEnd = () => {
+    if (swiperRef.current) {
+      swiperRef.current.scrollBy(2);
     }
+  }
 
   return (
     <Swiper
@@ -64,18 +72,26 @@ const ScrollScreen: React.FC = () => {
       ref={swiperRef}
       loop={false}
     >
-      <View style={[styles.slide, styles.background1]}>
-        <Text style={styles.text}>Slide 1</Text>
-        <TouchableOpacity onPress={swipeToEnd}>
-            <Text>Skip</Text>
-        </TouchableOpacity>
-      </View>
-      <View style={[styles.slide, styles.background2]}>
-        <Text style={styles.text}>Slide 2</Text>
-      </View>
-      <View style={[styles.slide, styles.background3]}>
-        <Text style={styles.text}>Slide 3</Text>
-      </View>
+      <ImageBackground source={Imagebg1} style={styles.slide}>
+        <View style={[styles.overlay, styles.slide]}>
+
+          <Text style={styles.text}>Slide 1</Text>
+            <TouchableOpacity onPress={swipeToEnd}>
+              <Text>Skip</Text>
+            </TouchableOpacity>
+
+        </View>
+      </ImageBackground>
+      <ImageBackground source={Imagebg1} style={styles.slide}>
+          <View style={[styles.overlay, styles.slide]}>
+            <Text style={styles.text}>Slide 2</Text>
+          </View>
+      </ImageBackground>
+      <ImageBackground source={Imagebg1} style={styles.slide}>
+          <View style={[styles.overlay, styles.slide]}>
+            <Text style={styles.text}>Slide 3</Text>
+          </View>
+      </ImageBackground>
     </Swiper>
   );
 };
