@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is Notifications Component
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Notifications = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Notifications</Text>
     </View>
   )
 }
 
-export default Profile
+export default Notifications
 
 const styles = StyleSheet.create({})

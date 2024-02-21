@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is Tools Screen
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Tools = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Tools</Text>
     </View>
   )
 }
 
-export default Profile
+export default Tools
 
 const styles = StyleSheet.create({})

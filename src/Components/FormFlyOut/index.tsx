@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is FormFLyOut Component
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const FormFlyOut = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>FormFlyOut</Text>
     </View>
   )
 }
 
-export default Profile
+export default FormFlyOut
 
 const styles = StyleSheet.create({})

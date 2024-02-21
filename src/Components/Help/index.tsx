@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is Help Component
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Help = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Help</Text>
     </View>
   )
 }
 
-export default Profile
+export default Help
 
 const styles = StyleSheet.create({})

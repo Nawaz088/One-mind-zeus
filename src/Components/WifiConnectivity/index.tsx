@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is WifiConnectivity Component
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const WifiConnectivity = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>WifiConnectivity</Text>
     </View>
   )
 }
 
-export default Profile
+export default WifiConnectivity
 
 const styles = StyleSheet.create({})

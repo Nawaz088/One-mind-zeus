@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is Controllers Screen
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Controllers = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Controllers</Text>
     </View>
   )
 }
 
-export default Profile
+export default Controllers
 
 const styles = StyleSheet.create({})

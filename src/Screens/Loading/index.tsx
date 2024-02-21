@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is Loading Screen
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Loading = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Loading</Text>
     </View>
   )
 }
 
-export default Profile
+export default Loading
 
 const styles = StyleSheet.create({})

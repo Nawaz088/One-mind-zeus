@@ -4,13 +4,12 @@ import Swiper from 'react-native-swiper';
 import { useRef } from 'react';
 import { Button } from '@rneui/themed';
 
-// # image imports
-import Imagebg1 from '../../theme/images/AdobeStock1.png';
 
 // color imports
-import {Colors} from '../../theme/colors/globalColors';
+import {Colors} from '../../Theme/colors/globalColors';
 
 const BgColor = Colors.sliderColours.primary;
+
 const styles = StyleSheet.create({
   wrapper: {
     height: '100%',
@@ -24,7 +23,7 @@ const styles = StyleSheet.create({
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: `rgba(${BgColor}, 0.9)`,
+    backgroundColor: `rgba(7,62,87, 0.9)`,
   },
   text: {
     color: '#fff',

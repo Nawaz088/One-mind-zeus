@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is EthernetCard Component
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const EthernetCard = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>EthernetCard</Text>
     </View>
   )
 }
 
-export default Profile
+export default EthernetCard
 
 const styles = StyleSheet.create({})

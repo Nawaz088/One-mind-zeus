@@ -1,17 +1,16 @@
-// This is Profile Screen
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Calibrate = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Calibrate</Text>
     </View>
   )
 }
 
-export default Profile
+export default Calibrate
 
 const styles = StyleSheet.create({})

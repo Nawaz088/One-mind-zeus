@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is Summary Screen
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Summary = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Summary</Text>
     </View>
   )
 }
 
-export default Profile
+export default Summary
 
 const styles = StyleSheet.create({})

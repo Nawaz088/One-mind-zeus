@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is Edit Component
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Edit = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Edit</Text>
     </View>
   )
 }
 
-export default Profile
+export default Edit
 
 const styles = StyleSheet.create({})

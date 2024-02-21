@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is ListFLyOut Component
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const ListFLyOut = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>ListFLyOut</Text>
     </View>
   )
 }
 
-export default Profile
+export default ListFLyOut
 
 const styles = StyleSheet.create({})

@@ -1,17 +1,17 @@
-// This is Profile Screen
+// This is Home Screen
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Home = (props: Props) => {
   return (
     <View>
-      <Text>Profile</Text>
+      <Text>Home</Text>
     </View>
   )
 }
 
-export default Profile
+export default Home
 
 const styles = StyleSheet.create({})
